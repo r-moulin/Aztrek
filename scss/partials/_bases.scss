@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    @media (min-width: $medium) {
+        width: 690px;
+    }
+    @media (min-width: $large) {
+        width: 1110px;
+    }
+}
+
+img {
+    display: block
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+.logotype {
+    width: 345px;
+    margin: 0;
+    padding: 0;
+}

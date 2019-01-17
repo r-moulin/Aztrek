@@ -1,0 +1,44 @@
+.stellarnav {
+  &.light{
+
+    @media (min-width: $medium){
+      background: transparent;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    ul ul {
+     // background: #78C0E0;
+    }
+
+    li a {
+      color: #fff;
+    }
+  }
+
+  &>ul#nav {
+
+    color: white;
+  }
+
+  &.fixed {
+    background: $medium-blue;
+  }
+
+  & ul li:hover a,
+  ul ul {
+    background: $medium-blue;
+  }
+
+  li a {
+    color: white;
+
+    background: $medium-blue;
+
+    @media (min-width: $medium) {
+      background: none;
+    }
+  }
+}

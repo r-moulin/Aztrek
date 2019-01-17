@@ -1,0 +1,31 @@
+//Colors
+
+h3{
+    color: $medium-blue;
+}
+h2,
+h4 {
+    color: $dark-blue;
+}
+
+// FONT
+h1,
+h2,
+    {
+    font-family: $title;
+}
+h3,
+h4,
+h5,
+h6,body {
+    font-family: $font-stack;
+}
+
+// SIZE
+
+h2{
+    font-size: 2rem;
+    @media (min-width: $medium) {
+        font-size: 3.375rem;
+    }
+}
