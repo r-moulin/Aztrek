@@ -57,7 +57,7 @@
         <li class="last"><a href="#">Connexion</a>
             <ul>
                 <li class="first"><a href="#">S'inscrire</a></li>
-                <li class="last"><a href="#">Se connecter</a>
+                <li class="last"><a href="<?= SITE_ADMIN ;?>">Se connecter</a>
 
                 </li>
             </ul>

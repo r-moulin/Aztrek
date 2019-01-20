@@ -1,4 +1,9 @@
-<?php require_once("layout/header.php")  ?>
+<?php
+require_once "model/database.php";
+
+$sejours = getAllSejours(2);
+
+require_once "layout/header.php" ?>
     <div class="background-principal">
         <main>
             <section class="destination-moment container flex">
@@ -7,26 +12,16 @@
                     <h2>Destination du moment</h2>
                     <h3>Trouvez le trek qui vous convient</h3>
                 </div>
-                <article class="left-destination col-6 flex">
-                    <img src="./img/costa-rica-pont.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Cap vers le Costa Rica !</h4>
-                        <p>Le pays entier joue les eldorados naturels. Dégradés de verts et culture café dans la Vallée
-                            centrale, volcan et lac dans le parc national Arenal, mangroves et plages sauvages du Golf
-                            Dulce</p>
-                        <a href="" class="btn-more"> En savoir plus</a>
-                    </div>
-                </article>
-                <article class="right-destination col-6 flex">
-                    <img src="./img/Embarquez-Guatemala.jpg" alt="">
-                    <div class="content-card">
-                        <h4>Cap vers le Costa Rica !</h4>
-                        <p>Le pays entier joue les eldorados naturels. Dégradés de verts et culture café dans la Vallée
-                            centrale, volcan et lac dans le parc national Arenal, mangroves et plages sauvages du Golf
-                            Dulce</p>
-                        <a href="" class="btn-more"> En savoir plus</a>
-                    </div>
-                </article>
+                <div class="sejour-on-top">
+                    <?php foreach ($sejours as $sejour) : ; ?>
+                        <article class="left-destination col-6 flex">
+                            <?php require_once "include/sejour_inc.php"; ?>
+                        </article>
+                    <?php endforeach;; ?>
+                </div>
+
+
+
             </section>
             <section class="destinations-all ">
                 <div class="title-section container flex">
@@ -225,7 +220,8 @@
 
                             <li>J’envoie des photos via le forum (vous multiplierez vos chances en proposant plusieurs
                                 images
-                                mais 1 seule photo gagnante sera retenue par photographe)</li>
+                                mais 1 seule photo gagnante sera retenue par photographe)
+                            </li>
                         </ul>
 
                     </div>
@@ -234,4 +230,4 @@
             </article>
         </section>
     </div>
-<?php require_once ("layout/footer.php") ?>
+<?php require_once("layout/footer.php") ?>
