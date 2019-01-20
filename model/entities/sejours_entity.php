@@ -6,7 +6,7 @@ function getAllSejours(int $limit=999) : array {
             SELECT 
                     sejour. * ,
                     pays.nom AS pays,
-                    guide.libelle AS guide,
+                    guide.nom AS guide,
                     difficulte.libelle AS difficulte
                 
             FROM sejour
@@ -29,8 +29,8 @@ function getOneSejours(int $id): array {
     $query = "
             SELECT 
                     sejour. * , 
-                    pays.libelle AS pays,
-                    guide.libelle,
+                    pays.nom AS pays,
+                    guide.nom,
                     depart.prix,depart.depart,
                     image.libelle
                 
@@ -52,7 +52,7 @@ function getOneSejours(int $id): array {
 
 }
 
-function insertSejour(string $titre,string $description,int $places,int $a_la_une,int $duree,int $publie,int $guide_id,int $difficulte_id,int $pays_id) {
+function insertSejour(string $nom,string $description,int $places,int $a_la_une,int $duree,int $publie,int $guide_id,int $difficulte_id,int $pays_id) {
     global $connection;
 
     $query = "
@@ -62,7 +62,24 @@ function insertSejour(string $titre,string $description,int $places,int $a_la_un
     ";
 
     $stmt = $connection->prepare($query);
-    $stmt->bindParam(":titre", $titre);
+    $stmt->bindParam(":nom", $nom);
+    $stmt->bindParam(":description", $description);
+    $stmt->bindParam(":places", $places);
+    $stmt->bindParam(":a_la_une", $a_la_une);
+    $stmt->bindParam(":duree", $duree);
+    $stmt->bindParam(":publie", $publie);
+    $stmt->bindParam(":guide", $guide_id);
+    $stmt->bindParam(":difficulte", $difficulte_id);
+    $stmt->bindParam(":pays_id", $pays_id);
+    $stmt->execute();
+}
+function updateSejour (int $id,string $nom,string $description,int $places,int $a_la_une,int $duree,int $publie,int $guide_id,int $difficulte_id,int $pays_id) {
+    global $connection;
+    $query = "UPDATE sejour SET nom = :nom, description = :description,places= :places,a_la_une= :a_la_une,duree= :duree,publie= :publie,guide_id= :guide_id,difficulte_id= :difficulte_id,pays_id= :pays_id  WHERE id= :id";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->bindParam(":nom", $nom);
     $stmt->bindParam(":description", $description);
     $stmt->bindParam(":places", $places);
     $stmt->bindParam(":a_la_une", $a_la_une);

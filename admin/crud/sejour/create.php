@@ -29,7 +29,7 @@ require_once '../../layout/header.php';
         <select name="guide_id" class="form-control">
             <?php foreach ($guides as $guide) : ?>
                 <option value="<?php echo $guide["id"]; ?>">
-                    <?php echo $guide["libelle"]; ?>
+                    <?php echo $guide["nom"]; ?>
                 </option>
             <?php endforeach; ?>
         </select>

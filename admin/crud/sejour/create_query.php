@@ -5,11 +5,10 @@ require_once '../../../model/database.php';
 $titre = $_POST['titre'];
 $pays_id = $_POST['pays_id'];
 $description = $_POST['description'];
-$places = $_POST['places'];
+$places = $_POST['place'];
 $duree = $_POST['duree'];
-$guide_id= $_POST['guide_id'];
 $difficulte_id= $_POST['difficulte'];
-$pays= $_POST['pays_id'];
+$guide_id= $_POST['guide'];
 $publie = ($_POST['publie']== "on") ? 1 : 0;
 $a_la_une = ($_POST['a_la_une']== "on") ? 1 : 0;
 

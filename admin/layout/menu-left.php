@@ -21,6 +21,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link <?php echo isActive("/crud/team/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/team/">
+                    <i class="fa fa-book"></i>
+                    L'équipe
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="fa fa-tags"></i>
                     Tags

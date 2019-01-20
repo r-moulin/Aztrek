@@ -2,189 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efcbcd14-9b02-463e-93ec-651879d21c75" name="Default Changelist" comment="CRUD et ajout de fonction">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aztrek.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ac66b7dd-c8cd-4f04-887b-017dc443841d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/pays/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/pays/create_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/pays/delete_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/pays/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/pays/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/pays/update_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/sejour/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/sejour/create_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/sejour/delete_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/sejour/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/sejour/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/crud/sejour/update_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/css/signin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/layout/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/layout/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/layout/menu-left.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/layout/menu-top.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/security.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aztrek.mwb.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/parameters.dist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/sejour_inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/entities/pays_entity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/entities/sejours_entity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/entities/utilisateur_entity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sejour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/sejour/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud/sejour/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/sejour/create_query.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud/sejour/create_query.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/sejour/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud/sejour/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/sejour/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud/sejour/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/crud/sejour/update_query.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/crud/sejour/update_query.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/menu-left.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/menu-left.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aztrek.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/aztrek.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/owl.carousel.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/owl.theme.default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stellarnav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stellarnav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stellarnav.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stellarnav.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Embarquez Guatemala.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Embarquez Guatemala.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Embarquez-Guatemala.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Embarquez-Guatemala.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/concours.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/concours.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/costa-rica-pont.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/costa-rica-pont.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Symbole h2-big.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Symbole h2-big.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Symbole-h2-big.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Symbole-h2-big.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Symbole-h2-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Symbole-h2-small.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Symbole-h3-big.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Symbole-h3-big.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Symbole-h3-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Symbole-h3-small.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Trace-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Trace-bg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Tracé 17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Tracé 17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elements/Tracé 17.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/elements/Tracé 17.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/footer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/footer.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/header.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/insta-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/insta-9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo/logotype.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo/logotype.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/slider-Guatemala.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/slider-Guatemala.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/slider-Mexique.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/slider-Mexique.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/slider-costarica.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/slider-costarica.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/slider-honduras.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/slider-honduras.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/slider-salvadore.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/slider-salvadore.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/temoignage-anne.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/temoignage-anne.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-3.3.1-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.sidr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.sidr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/stellarnav.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stellarnav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/stellarnav.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stellarnav.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/Icon&#10;" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/Icon&#10;" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_animation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_bases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_bases.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_btn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_normalize.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_outils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_outils.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_title.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_typo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/partials/_variables.Scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/partials/_variables.Scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/7092562ff2342c44bd04b7126cdf480999c3c69f/styles.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/7092562ff2342c44bd04b7126cdf480999c3c69f/styles.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_animation.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_animation.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_bases.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_bases.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_body.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_body.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_btn.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_btn.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_footer.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_footer.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_grid.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_grid.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_header.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_header.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_menu.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_menu.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_normalize.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_normalize.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_outils.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_outils.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_stellarnav.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_stellarnav.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_title.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_title.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_typo.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_typo.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_variables.Scssc" beforeDir="false" afterPath="$PROJECT_DIR$/test/.sass-cache/fbd07abcba85474aca38417320857f5352ef6e21/_variables.Scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/css/stellarnav.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/css/stellarnav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/css/stellarnav.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/css/stellarnav.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/js/stellarnav.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/js/stellarnav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/js/stellarnav.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/js/stellarnav.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/mega-dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mobile-friendly-Multi-level-Dropdown-Menu-Plugin-jQuery-Stellarnav/mega-dropdown.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/jquery.sidr.bare.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/jquery.sidr.bare.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/jquery.sidr.dark.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/jquery.sidr.dark.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/jquery.sidr.light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/jquery.sidr.light.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/owl.carousel.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/owl.theme.default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/stellarnav.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/stellarnav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/stellarnav.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/stellarnav.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/js/jquery-3.3.1-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/jquery-3.3.1-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/js/jquery.sidr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/jquery.sidr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/js/stellarnav.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/stellarnav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/js/stellarnav.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/stellarnav.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/Icon&#10;" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/Icon&#10;" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_animation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_bases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_bases.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_btn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_normalize.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_outils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_outils.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_stellarnav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_stellarnav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_title.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_typo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/partials/_variables.Scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/partials/_variables.Scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aztrek.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/aztrek.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entities/sejours_entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/sejours_entity.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,43 +58,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/crud/pays/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/admin/crud/sejour/update_query.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/crud/pays/update_query.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/entities/pays_entity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="560">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nom</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -282,27 +87,35 @@
         <option value="$PROJECT_DIR$/admin/package.json" />
         <option value="$PROJECT_DIR$/config/parameters.php" />
         <option value="$PROJECT_DIR$/model/entities/utilisateur_entity.php" />
-        <option value="$PROJECT_DIR$/admin/layout/menu-left.php" />
         <option value="$PROJECT_DIR$/admin/security.php" />
         <option value="$PROJECT_DIR$/admin/layout/menu-top.php" />
         <option value="$PROJECT_DIR$/layout/menu.php" />
-        <option value="$PROJECT_DIR$/admin/crud/sejour/create_query.php" />
         <option value="$PROJECT_DIR$/admin/crud/pays/index.php" />
-        <option value="$PROJECT_DIR$/admin/crud/sejour/index.php" />
-        <option value="$PROJECT_DIR$/model/entities/sejours_entity.php" />
-        <option value="$PROJECT_DIR$/admin/crud/sejour/create.php" />
-        <option value="$PROJECT_DIR$/admin/crud/sejour/update.php" />
         <option value="$PROJECT_DIR$/admin/crud/pays/create_query.php" />
         <option value="$PROJECT_DIR$/admin/crud/pays/create.php" />
         <option value="$PROJECT_DIR$/admin/crud/pays/update_query.php" />
         <option value="$PROJECT_DIR$/model/entities/pays_entity.php" />
         <option value="$PROJECT_DIR$/admin/crud/pays/update.php" />
+        <option value="$PROJECT_DIR$/admin/crud/sejour/index.php" />
+        <option value="$PROJECT_DIR$/admin/crud/sejour/update.php" />
+        <option value="$PROJECT_DIR$/admin/layout/menu-left.php" />
+        <option value="$PROJECT_DIR$/admin/crud/team/index.php" />
+        <option value="$PROJECT_DIR$/admin/crud/sejour/create_query.php" />
+        <option value="$PROJECT_DIR$/admin/crud/sejour/create.php" />
+        <option value="$PROJECT_DIR$/admin/crud/team/create_query.php" />
+        <option value="$PROJECT_DIR$/admin/crud/team/create.php" />
+        <option value="$PROJECT_DIR$/model/entities/team_entity.php" />
+        <option value="$PROJECT_DIR$/admin/crud/team/delete_query.php" />
+        <option value="$PROJECT_DIR$/admin/crud/team/update.php" />
+        <option value="$PROJECT_DIR$/admin/crud/team/update_query.php" />
+        <option value="$PROJECT_DIR$/model/entities/sejours_entity.php" />
+        <option value="$PROJECT_DIR$/admin/crud/sejour/update_query.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3" />
-    <option name="y" value="372" />
+    <option name="x" value="191" />
+    <option name="y" value="597" />
     <option name="width" value="1546" />
     <option name="height" value="830" />
   </component>
@@ -326,6 +139,42 @@
               <item name="aztrek" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="aztrek" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aztrek" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aztrek" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aztrek" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
+              <item name="sejour" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aztrek" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aztrek" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
+              <item name="team" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aztrek" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aztrek" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aztrek" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aztrek" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aztrek" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aztrek" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -336,7 +185,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dcpro10-cookingchef" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -346,6 +195,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\aztrek\model\entities" />
+      <recent name="C:\wamp64\www\aztrek\admin\crud" />
       <recent name="C:\wamp64\www\aztrek\config" />
     </key>
   </component>
@@ -372,17 +222,40 @@
       <option name="presentableId" value="Default" />
       <updated>1547747807575</updated>
       <workItem from="1547747808715" duration="4057000" />
-      <workItem from="1547836905748" duration="26916000" />
+      <workItem from="1547836905748" duration="38397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30973000" />
+    <option name="totallyTimeSpent" value="42454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11140725" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.18216683" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32981783" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.26705757" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11140725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -396,13 +269,13 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32981783" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.26705757" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -410,6 +283,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CRUD et ajout de fonction" />
     <option name="LAST_COMMIT_MESSAGE" value="CRUD et ajout de fonction" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/crud/team/create_query.php</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/include/recipe_inc.php">
@@ -464,13 +347,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/layout/footer.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/layout/menu-left.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/layout/header.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -530,20 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -551,36 +413,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud/sejour/delete_query.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/create_query.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/entities/sejours_entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-700">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/crud/pays/create_query.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -596,10 +430,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/pays/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/entities/pays_entity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/layout/menu-left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/team/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/team/create_query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -610,17 +500,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/crud/pays/update.php">
+    <entry file="file://$PROJECT_DIR$/admin/crud/team/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="340">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/admin/crud/team/delete_query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/team/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <caret line="4" column="75" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/create_query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="101" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/team/update_query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entities/team_entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entities/sejours_entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/crud/sejour/update_query.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>

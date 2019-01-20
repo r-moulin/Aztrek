@@ -1,10 +1,7 @@
 <?php
 require_once '../../../model/database.php';
 
-$sejours = getAllSejours();
-
-
-
+$guides = getAllEntities("guide");
 
 $error_msg = null;
 if (isset($_GET['errcode'])) {
@@ -22,7 +19,7 @@ if (isset($_GET['errcode'])) {
 require_once '../../layout/header.php';
 ?>
 
-<h1>Gestion des séjours</h1>
+<h1>Gestion de l'équipe</h1>
 
 <a href="create.php" class="btn btn-primary">
     <i class="fa fa-plus"></i>
@@ -41,39 +38,25 @@ require_once '../../layout/header.php';
 <table class="table table-striped table-bordered table-condensed">
     <thead class="thead-light">
         <tr>
-            <th>Pays</th>
             <th>Nom</th>
-            <th>Descriptions</th>
-            <th>Guide</th>
-            <th>Places</th>
-            <th>Durée</th>
-            <th>Difficulté</th>
-            <th>Publication</th>
-
+            <th>Photos</th>
+            <th>Biographie</th>
             <th class="actions">Actions</th>
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($sejours as $sejour) : ?>
-
+        <?php foreach ($guides as $guide) : ?>
             <tr>
-
-                <td><?php echo $sejour{"pays"}; ?></td>
-                <td><?php echo $sejour{"nom"}; ?></td>
-                <td><?php echo $sejour{"description"}; ?></td>
-                <td><?php echo $sejour{"guide"}; ?></td>
-                <td><?php echo $sejour{"places"}; ?></td>
-                <td><?php echo $sejour{"duree"}; ?> jours</td>
-                <td><?php echo $sejour{"difficulte"}; ?> </td>
-                <td><?php echo $sejour{"publie"} ; ?> </td>
-
+                <td><?php echo $guide['nom']; ?></td>
+                <td><?php echo $guide['image']; ?></td>
+                <td><?php echo $guide['biographie']; ?></td>
                 <td class="actions">
-                    <a href="update.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning">
+                    <a href="update.php?id=<?php echo $guide['id']; ?>" class="btn btn-warning">
                         <i class="fa fa-edit"></i>
                         Modifier
                     </a>
                     <form action="delete_query.php" method="POST">
-                        <input type="hidden" name="id" value="<?php echo $sejour['id']; ?>">
+                        <input type="hidden" name="id" value="<?php echo $guide['id']; ?>">
                         <button type="submit" class="btn btn-danger">
                             <i class="fa fa-trash"></i>
                             Supprimer
