@@ -38,5 +38,5 @@
             <a href="destinations.html">Vous n'en avez encore aucune idée ? </a>
         </div>
 
-        <?php require_once ("layout/menu.php") ?>
+        <?php require_once ("menu.php") ?>
     </header>

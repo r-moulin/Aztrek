@@ -23,7 +23,7 @@ function getAllSejours(int $limit = 999): array
 
     return $stmt->fetchAll();
 }
-function getAllSejoursByPays(string $pays): array
+function getAllSejoursByPays(string $id): array
 {
     global $connection;
 
@@ -38,12 +38,11 @@ function getAllSejoursByPays(string $pays): array
             INNER JOIN   pays  on sejour.pays_id = pays.id
             INNER JOIN guide on sejour.guide_id = guide.id
             INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
-            WHERE sejour.pays_id = :pays
-            GROUP BY sejour.id
+            WHERE sejour.pays_id = :id
             ";
 
     $stmt = $connection->prepare($query);
-    $stmt->bindParam(":pays", $pays);
+    $stmt->bindParam(":id", $id);
     $stmt->execute();
 
     return $stmt->fetchAll();

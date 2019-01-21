@@ -4,6 +4,7 @@ require_once "model/database.php";
 $sejours = getAllSejoursTop();
 
 require_once "layout/header.php" ?>
+
     <div class="background-principal">
         <main>
             <section class="destination-moment container flex">
@@ -12,19 +13,14 @@ require_once "layout/header.php" ?>
                     <h2>Destination du moment</h2>
                     <h3>Trouvez le trek qui vous convient</h3>
                 </div>
-                <div class="row">
 
-
-                    <?php foreach ($sejours as $sejour) : ?>
-
-
-                            <?php require_once "include/sejour_inc.php"; ?>
-
-                    <?php endforeach; ?>
-
-
-
-                </div>
+                    <section class="d-flex  ">
+                        <?php foreach ($sejours as $sejour) : ?>
+                            <div class="col-4">
+                                <?php include "include/sejour_inc.php" ?>
+                            </div>
+                        <?php endforeach; ?>
+                    </section>
 
 
             </section>

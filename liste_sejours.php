@@ -2,21 +2,19 @@
 require_once "model/database.php";
 $id = $_GET["id"];
 
-$sejours = getAllSejoursByPays($id);
+$voyages = getAllSejoursByPays($id);
+
 
 require_once "layout/header.php" ?>
 
 
 
 <main class="container">
-
-    <section class="row recipes">
-        <?php foreach ($sejours as $sejour) : ?>
-            <div class="col-md-4">
-                <?php include "include/sejour_inc.php" ?>
-            </div>
-        <?php endforeach; ?>
-    </section>
+    <?php foreach ($voyages as $voyage) : ?>
+        <div class="col-md-4">
+            <?php include "include/sejour_inc.php" ?>
+        </div>
+    <?php endforeach;  ?>
 
 
 </main>

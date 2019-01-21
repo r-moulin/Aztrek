@@ -1,5 +1,4 @@
 <?php
-$sejours = getAllSejours();
 $lands = getAllEntities("pays")
 ?>
 
@@ -11,11 +10,7 @@ $lands = getAllEntities("pays")
             <ul>
                 <?php foreach ($lands as $land) : ?>
                     <li class="first"><a href="liste_sejours.php?id=<?= $land{"id"}  ?>" class="dir"><?= $land{"nom"}; ?></a>
-                        <ul>
-                            <?php foreach ($sejours as $sejour) : ?>
-                            <li class="first"><a href="<?= $sejour{'id'}   ?>"><?= $sejour{"nom"} ?></a></li>
-                            <?php endforeach;  ?>
-                        </ul>
+
                     </li>
                 <?php endforeach; ?>
             </ul>
