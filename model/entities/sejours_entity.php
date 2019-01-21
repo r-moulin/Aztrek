@@ -48,6 +48,30 @@ function getAllSejoursByPays(string $pays): array
 
     return $stmt->fetchAll();
 }
+
+function getAllSejoursTop(): array {
+    global $connection;
+
+    $query = "
+            SELECT 
+                    sejour.* ,
+                    pays.nom AS pays,
+                    guide.nom AS guide,
+                    difficulte.libelle AS difficulte
+                
+            FROM sejour
+            INNER JOIN   pays  on sejour.pays_id = pays.id
+            INNER JOIN guide on sejour.guide_id = guide.id
+            INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
+            WHERE sejour.a_la_une = 1
+            GROUP BY sejour.id
+            ";
+
+    $stmt = $connection->prepare($query);
+    $stmt->execute();
+
+    return $stmt->fetchAll();
+}
 function getOneSejour(int $id, bool $onlyPublished = true): array
 {
     global $connection;

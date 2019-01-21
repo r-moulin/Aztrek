@@ -675,7 +675,6 @@ header {
     .destination-moment .right-destination > a {
       display: inline-block;
       padding: 15px 23px;
-      background: #E4032C;
       border-radius: 50px 0 50px 0; }
     .destination-moment .left-destination h4,
     .destination-moment .left-destination a,
