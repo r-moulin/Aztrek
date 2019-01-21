@@ -1,4 +1,5 @@
 <?php
+
 require_once '../../../model/database.php';
 
 $sejours = getAllSejours();
@@ -20,7 +21,7 @@ if (isset($_GET['errcode'])) {
 require_once '../../layout/header.php';
 ?>
 
-    <h1>Gestion des séjours</h1>
+    <h1>Gestion des Départs pour <?=  $sejours{"nom"};  ?></h1>
 
     <a href="create.php" class="btn btn-primary mx-2">
         <i class="fa fa-plus"></i>

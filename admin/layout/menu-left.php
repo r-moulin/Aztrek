@@ -27,9 +27,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fa fa-tags"></i>
-                    Tags
+                <a class="nav-link <?php echo isActive("/crud/photos/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/photos/">
+                    <i class="fa fa-book"></i>
+                    Gestion des photos
                 </a>
             </li>
             <li class="nav-item">

@@ -48,7 +48,7 @@ require_once '../../layout/header.php';
         <?php foreach ($guides as $guide) : ?>
             <tr>
                 <td><?php echo $guide['nom']; ?></td>
-                <td><?php echo $guide['image']; ?></td>
+                <td><img src="../../../uploads/team/<?php echo $guide['image']; ?>" class="img-thumbnail"></td>
                 <td><?php echo $guide['biographie']; ?></td>
                 <td class="actions">
                     <a href="update.php?id=<?php echo $guide['id']; ?>" class="btn btn-warning">

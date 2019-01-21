@@ -12,11 +12,11 @@ require_once '../../layout/header.php';
 <form action="update_query.php" method="POST" enctype="multipart/form-data">
     <div class="form-group">
         <label>Nom</label>
-        <input type="text" name="nom" value="<?php echo $guide["nom"]; ?>" class="form-control" placeholder="Nom" required>
+        <input type="text" name="nom" value="<?php echo $guide["nom"]; ?>" class="form-control" placeholder="Nom" >
         <label>Biographie</label>
-        <input type="text" name="biographie" value="<?php echo $guide["biographie"]; ?>" class="form-control" placeholder="Biographie" required>
+        <input type="text" name="biographie" value="<?php echo $guide["biographie"]; ?>" class="form-control" placeholder="Biographie" >
         <label>Image</label>
-        <input type="file" name="image" value="<?php echo $guide["image"]; ?>" class="form-control"  required>
+        <input type="file" name="image" value="<?php echo $guide["image"]; ?>" class="form-control"  >
     </div>
     <input type="hidden" name="id" value="<?php echo $id; ?>"> 
     <button type="submit" class="btn btn-success">

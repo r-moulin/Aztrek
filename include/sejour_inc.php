@@ -1,7 +1,16 @@
-<img src="upload/<?= $sejour["image"] ;?>" alt=" <?= $sejour["titre"] ;?>">
-<div class="content-card">
-    <h4>Cap vers le <?= $sejour["titre"] ;?></h4>
-    <p><?= $sejour["description"] ;?></p>
-    <a href="sejour.php?<?= $sejour["id"] ;?>" class="btn-more"> En savoir plus</a>
-</div>
+<article>
 
+    <h2><a href="sejour.php?id=<?php echo $sejour["id"]; ?>"><?= $sejour{"nom"}; ?></a></h2>
+    <a href="sejour.php?id=<?php echo $sejour["id"]; ?>">
+        <img src="uploads/<?= $sejour{"image"}; ?>" alt="<?= $sejour{"nom"}; ?>"class="img-responsive">
+    </a>
+
+
+    <p><?= $sejour{"description"}; ?></p>
+
+
+    <footer>
+
+
+    </footer>
+</article>

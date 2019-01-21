@@ -1,7 +1,10 @@
 <?php
-require_once '../../../model/database.php';
+require_once '../../../../model/database.php';
 
-$lands = getAllEntities("pays");
+$difficultes = getAllEntities("difficulte");
+
+
+
 
 $error_msg = null;
 if (isset($_GET['errcode'])) {
@@ -16,17 +19,17 @@ if (isset($_GET['errcode'])) {
     }
 }
 
-require_once '../../layout/header.php';
+require_once '../../../layout/header.php';
 ?>
 
-<h1>Gestion des Pays</h1>
+    <h1>Gestion des séjours</h1>
 
-<a href="create.php" class="btn btn-primary">
-    <i class="fa fa-plus"></i>
-    Ajouter
-</a>
+    <a href="create.php" class="btn btn-primary">
+        <i class="fa fa-plus"></i>
+        Ajouter
+    </a>
 
-<hr>
+    <hr>
 
 <?php if ($error_msg) : ?>
     <div class="alert alert-danger">
@@ -35,28 +38,27 @@ require_once '../../layout/header.php';
     </div>
 <?php endif; ?>
 
-<table class="table table-striped table-bordered table-condensed">
-    <thead class="thead-light">
+    <table class="table table-striped table-bordered table-condensed">
+        <thead class="thead-light">
         <tr>
-            <th>Nom</th>
-            <th>Sous-titre</th>
-            <th>Description</th>
+            <th>Difficultés</th>
             <th class="actions">Actions</th>
         </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($lands as $land) : ?>
+        </thead>
+        <tbody>
+        <?php foreach ($difficultes as $difficulte) : ?>
+
             <tr>
-                <td><?php echo $land['nom']; ?></td>
-                <td><?php echo $land['sous_titre']; ?></td>
-                <td><?php echo $land['description']; ?></td>
+
+                <td><?php echo $difficulte{"libelle"}; ?></td>
+
                 <td class="actions">
-                    <a href="update.php?id=<?php echo $land['id']; ?>" class="btn btn-warning">
+                    <a href="../update.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning">
                         <i class="fa fa-edit"></i>
                         Modifier
                     </a>
-                    <form action="delete_query.php" method="POST">
-                        <input type="hidden" name="id" value="<?php echo $land['id']; ?>">
+                    <form action="../delete_query.php" method="POST">
+                        <input type="hidden" name="id" value="<?php echo $sejour['id']; ?>">
                         <button type="submit" class="btn btn-danger">
                             <i class="fa fa-trash"></i>
                             Supprimer
@@ -65,8 +67,8 @@ require_once '../../layout/header.php';
                 </td>
             </tr>
         <?php endforeach; ?>
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
 
-<?php require_once '../../layout/footer.php'; ?>
+<?php require_once '../../../layout/footer.php'; ?>

@@ -7,7 +7,7 @@ $guides = getAllEntities("guide");
 require_once '../../layout/header.php';
 ?>
 
-<h1>Ajout d'une photo</h1>
+<h1>Ajout d'un séjour</h1>
 
 <form action="create_query.php" method="POST" enctype="multipart/form-data">
     <div class="form-group">
@@ -25,6 +25,10 @@ require_once '../../layout/header.php';
         </select>
     </div>
     <div class="form-group">
+        <label id="image">Image</label>
+        <input type="file" id="image" name="image" class="form-control">
+    </div>
+    <div class="form-group">
         <label>Guide</label>
         <select name="guide_id" class="form-control">
             <?php foreach ($guides as $guide) : ?>
@@ -33,10 +37,6 @@ require_once '../../layout/header.php';
                 </option>
             <?php endforeach; ?>
         </select>
-    </div>
-    <div class="form-group">
-        <label>Image</label>
-        <input type="file" name="image" class="form-control" required>
     </div>
     <div class="form-group">
         <label>Description</label>
@@ -59,7 +59,8 @@ require_once '../../layout/header.php';
     <div class="form-group form-check">
         <input type="checkbox" name="publie" class="form-check-input">
         <label>Publié ?</label>
-        <div class="form-group form-check">
+    </div>
+    <div class="form-group form-check">
         <input type="checkbox" name="a_la_une" class="form-check-input">
         <label>A la une ?</label>
     </div>

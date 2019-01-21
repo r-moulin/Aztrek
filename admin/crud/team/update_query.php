@@ -3,6 +3,9 @@ require_once '../../security.php';
 require_once '../../../model/database.php';
 
 $id = $_POST['id'];
+$guide = getOneEntity("guide", $id);
+
+$id = $_POST['id'];
 $nom = $_POST['nom'];
 $biographie = $_POST['biographie'];
 if ($_FILES["image"]["error"] == 0) {

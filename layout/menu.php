@@ -1,44 +1,20 @@
+<?php
+$lands = getAllSejours();
+?>
+
+
 <nav class="stellarnav">
     <ul id="nav">
         <li class="first"><a href="#">Accueil</a></li>
         <li class="dir"><a href=""> Nos destinations</a>
             <ul>
-                <li class="first"><a href="#" class="dir">Costa Rica</a>
-                    <ul>
-                        <li class="first"><a href="">Voyage</a></li>
-                        <li><a href="">Voyage</a></li>
-                        <li class="last"><a href="">Voyage</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="dir">El Salvadore</a>
-                    <ul>
-                        <li class="first"><a href="">Voyage</a></li>
-                        <li><a href="">Voyage</a></li>
-                        <li class="last"><a href="">Voyage</a></li>
-                    </ul>
-
-                </li>
-                <li><a href="#" class="dir">Guatemala</a>
-                    <ul>
-                        <li class="first"><a href="">Voyage</a></li>
-                        <li><a href="">Voyage</a></li>
-                        <li class="last"><a href="">Voyage</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="dir">Honduras</a>
-                    <ul>
-                        <li class="first"><a href="">Voyage</a></li>
-                        <li><a href="">Voyage</a></li>
-                        <li class="last"><a href="">Voyage</a></li>
-                    </ul>
-                </li>
-                <li class="last"><a href="#" class="dir">Mexique</a>
-                    <ul>
-                        <li class="first"><a href="">Voyage</a></li>
-                        <li><a href="">Voyage</a></li>
-                        <li class="last"><a href="">Voyage</a></li>
-                    </ul>
-                </li>
+                <?php foreach ($lands as $land) : ?>
+                    <li class="first"><a href="liste_sejours.php?id=<?= $land{"pays_id"}  ?>" class="dir"><?= $land{"pays"}; ?></a>
+                        <ul>
+                            <li class="first"><a href="<?= $sejour   ?>"><?= $land{"nom"} ?></a></li>
+                        </ul>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </li>
         <li class="dir"><a href=""> Les Aztrekkeurs</a>
@@ -57,7 +33,7 @@
         <li class="last"><a href="#">Connexion</a>
             <ul>
                 <li class="first"><a href="#">S'inscrire</a></li>
-                <li class="last"><a href="<?= SITE_ADMIN ;?>">Se connecter</a>
+                <li class="last"><a href="<?= SITE_ADMIN; ?>">Se connecter</a>
 
                 </li>
             </ul>
