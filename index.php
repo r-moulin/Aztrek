@@ -1,7 +1,7 @@
 <?php
 require_once "model/database.php";
 
-$sejours = getAllSejoursTop();
+$voyages = getAllSejoursTop();
 
 require_once "layout/header.php" ?>
 
@@ -14,11 +14,9 @@ require_once "layout/header.php" ?>
                     <h3>Trouvez le trek qui vous convient</h3>
                 </div>
 
-                    <section class="d-flex  ">
-                        <?php foreach ($sejours as $sejour) : ?>
-                            <div class="col-4">
+                    <section class="travel-top">
+                        <?php foreach ($voyages as $voyage) : ?>
                                 <?php include "include/sejour_inc.php" ?>
-                            </div>
                         <?php endforeach; ?>
                     </section>
 

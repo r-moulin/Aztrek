@@ -11,7 +11,7 @@ require_once "layout/header.php" ?>
 
 <main class="container">
     <?php foreach ($voyages as $voyage) : ?>
-        <div class="col-md-4">
+        <div class="">
             <?php include "include/sejour_inc.php" ?>
         </div>
     <?php endforeach;  ?>

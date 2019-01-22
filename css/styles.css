@@ -662,31 +662,30 @@ header {
     .destination-moment {
       flex-direction: row;
       flex-wrap: wrap; } }
-  .destination-moment .left-destination,
-  .destination-moment .right-destination {
+  .destination-moment .travel-top {
+    display: flex;
     margin-top: 40px;
-    flex-direction: column;
-    align-items: center; }
-    @media (min-width: 768px) {
-      .destination-moment .left-destination p,
-      .destination-moment .right-destination p {
-        margin: 20px 60px; } }
-    .destination-moment .left-destination > a,
-    .destination-moment .right-destination > a {
-      display: inline-block;
-      padding: 15px 23px;
-      border-radius: 50px 0 50px 0; }
-    .destination-moment .left-destination h4,
-    .destination-moment .left-destination a,
-    .destination-moment .right-destination h4,
-    .destination-moment .right-destination a {
-      margin: 40px auto;
-      align-self: center; }
-  .destination-moment .right-destination {
-    display: none; }
-    @media (min-width: 768px) {
-      .destination-moment .right-destination {
-        display: flex; } }
+    align-content: stretch;
+    justify-content: space-between; }
+    .destination-moment .travel-top .sejour-top {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      height: 100%;
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #78C0E0;
+      border-radius: 10px;
+      text-align: center; }
+      .destination-moment .travel-top .sejour-top img {
+        width: 500px; }
+      .destination-moment .travel-top .sejour-top .btn-more {
+        flex-grow: 1;
+        align-self: center; }
+
+.image-sejour {
+  width: 300px;
+  height: 300px; }
 
 .owl-carousel {
   position: relative; }

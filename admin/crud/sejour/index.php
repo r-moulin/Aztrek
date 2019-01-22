@@ -74,7 +74,7 @@ require_once '../../layout/header.php';
                 <td><?php echo $sejour{"a_la_une"}; ?> </td>
 
                 <td class="actions">
-                    <a href="depart.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning ">
+                    <a href="../depart/index.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning ">
                         <i class="fa fa-edit"></i>
                         Gérer les départs
                     </a> <a href="update.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning mx-3">

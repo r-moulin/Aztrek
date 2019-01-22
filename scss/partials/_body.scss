@@ -18,41 +18,41 @@
         flex-wrap: wrap;
     }
 
-    .left-destination,
-    .right-destination {
+    .travel-top {
+        display: flex;
         margin-top: 40px;
-        flex-direction: column;
-        align-items: center;
+        align-content: stretch;
+        justify-content: space-between;
 
-        @media (min-width: $medium) {
-            p {
-
-                margin: 20px 60px;
-            }
-        }
-
-        &>a {
-            display: inline-block;
-            padding: 15px 23px;
-            border-radius: 50px 0 50px 0;
-        }
-
-        h4,
-        a {
-            margin: 40px auto;
-            align-self: center;
-        }
-    }
-
-    .right-destination {
-        display: none;
-
-        @media (min-width: $medium) {
+        .sejour-top{
             display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            height: 100%;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid $medium-blue;
+            border-radius: 10px;
+            text-align: center;
+            img{
+                width:500px;
+            }
+            .btn-more {
+                flex-grow: 1;
+                align-self: center;
+
+            }
+
         }
+
     }
 }
+// --------------SEJOUR.php ------------------
 
+.image-sejour {
+    width: 300px;
+    height: 300px;
+}
 // -----------------Section slider -----------
 
 .owl-carousel {

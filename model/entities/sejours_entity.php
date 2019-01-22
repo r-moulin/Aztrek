@@ -80,12 +80,14 @@ function getOneSejour(int $id, bool $onlyPublished = true): array
                     sejour.* ,
                     pays.nom AS pays,
                     guide.nom AS guide,
-                    difficulte.libelle AS difficulte
+                    difficulte.libelle AS difficulte,
+                    MIN(depart.prix) AS prix
                 
             FROM sejour
             INNER JOIN pays  on sejour.pays_id = pays.id
             INNER JOIN guide on sejour.guide_id = guide.id
             INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
+            INNER JOIN depart on sejour.id = depart.sejour_id
             ";
             if ($onlyPublished) {
                 $query .= "WHERE sejour.publie = 1";
@@ -145,4 +147,29 @@ function updateSejour(int $id, string $nom, string $description,string $filename
     $stmt->bindParam(":difficulte_id", $difficulte_id);
     $stmt->bindParam(":pays_id", $pays_id);
     $stmt->execute();
+}
+
+function getAllDepartBySejour(string $id): array
+{
+    global $connection;
+
+    $query = "
+            SELECT 
+                  depart.*,
+                  DATE_FORMAT(depart.depart,'%d-%m-%Y ' ) AS date_depart,
+                  DATE_FORMAT(DATE_ADD(depart.depart, INTERVAL sejour.duree DAY), '%d-%m-%Y ') AS date_arrivee_format,
+                  sejour.nom AS nom
+                
+            FROM depart
+            INNER JOIN   sejour on depart.sejour_id = sejour.id
+            
+            WHERE depart.id= :id
+            
+            ";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->execute();
+
+    return $stmt->fetchAll();
 }
