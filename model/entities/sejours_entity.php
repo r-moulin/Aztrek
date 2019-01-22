@@ -156,12 +156,13 @@ function getAllDepartBySejour(string $id): array
                   DATE_FORMAT(depart.depart,'%d-%m-%Y ' ) AS date_depart,
                   DATE_FORMAT(DATE_ADD(depart.depart, INTERVAL sejour.duree DAY), '%d-%m-%Y ') AS date_arrivee_format,
                   sejour.nom AS nom,
-                  depart_has_user.nbr_personne AS places
+                  sejour.places - SUM(depart_has_user.nbr_personne) AS places
                 
             FROM depart
             INNER JOIN   sejour on depart.sejour_id = sejour.id
             LEFT JOIN depart_has_user  on depart.id = depart_has_user.depart_id
             WHERE sejour.id= :id
+            GROUP BY sejour.id
             
             ";
 

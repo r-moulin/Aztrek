@@ -1195,7 +1195,7 @@ user_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="242" name="description-courte">
+    <column id="289" parent="242" name="description_courte">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1338,7 +1338,6 @@ user_id</ColNames>
     <column id="313" parent="244" name="adresse">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="314" parent="244" name="mdp">
