@@ -149,7 +149,7 @@ function updateSejour(int $id, string $nom, string $description,string $filename
     $stmt->execute();
 }
 
-function getAllDepartBySejour(string $id): array
+function getAllDepartBySejour(string $id,int $limit=999): array
 {
     global $connection;
 
@@ -164,6 +164,7 @@ function getAllDepartBySejour(string $id): array
             INNER JOIN   sejour on depart.sejour_id = sejour.id
             
             WHERE depart.id= :id
+            LIMIT $limit
             
             ";
 

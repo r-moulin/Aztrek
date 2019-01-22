@@ -26,9 +26,9 @@ require_once '../../layout/header.php';
         <i class="fa fa-plus"></i>
         Ajouter
     </a>
-    <a href="option/index.php" class="btn btn-primary mx-2">
+    <a href="../depart/create.php" class="btn btn-primary mx-2">
         <i class="fa fa-plus"></i>
-        Difficulté
+        Ajouter des départs
     </a>
 
     <hr>

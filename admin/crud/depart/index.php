@@ -3,7 +3,7 @@
 require_once '../../../model/database.php';
 
 $id = $_GET["id"];
-$departs = getAllDepartBySejour($id);
+$departs = getAllDepartBySejour($id, 999);
 $sejour = getOneSejour($id, false);
 
 
@@ -27,7 +27,7 @@ require_once '../../layout/header.php';
 
     <h1>Gestion des Départs pour <?=  $sejour["nom"];  ?>  </h1>
 
-    <a href="../sejour/create.php" class="btn btn-primary mx-2">
+    <a href="create.php" class="btn btn-primary mx-2">
         <i class="fa fa-plus"></i>
         Ajouter
     </a>

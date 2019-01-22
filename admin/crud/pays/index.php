@@ -39,6 +39,7 @@ require_once '../../layout/header.php';
     <thead class="thead-light">
         <tr>
             <th>Nom</th>
+            <th>Image</th>
             <th>Sous-titre</th>
             <th>Description</th>
             <th class="actions">Actions</th>
@@ -48,6 +49,7 @@ require_once '../../layout/header.php';
         <?php foreach ($lands as $land) : ?>
             <tr>
                 <td><?php echo $land['nom']; ?></td>
+                <td><img src="../../../uploads/<?php echo $land['image']; ?>" alt=""></td>
                 <td><?php echo $land['sous_titre']; ?></td>
                 <td><?php echo $land['description']; ?></td>
                 <td class="actions">

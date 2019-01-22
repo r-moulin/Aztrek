@@ -7,7 +7,7 @@
         <li class="nav-item dropdown" >
 
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                moulin.r1@gmail.com
+                <?= $user['email'];  ?>
             </a>
             <div class="dropdown-menu">
                 <a href="#" class="dropdown-item">

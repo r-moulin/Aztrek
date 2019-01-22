@@ -1,5 +1,9 @@
 <?php
-$lands = getAllEntities("pays")
+require_once  __DIR__ . "/../config/parameters.php";
+require_once __DIR__ . "/../functions.php";
+$user = getCurrentUser();
+$lands = getAllEntities("pays");
+
 ?>
 
 
@@ -30,10 +34,12 @@ $lands = getAllEntities("pays")
         </li>
         <li class="last"><a href="#">Connexion</a>
             <ul>
-                <li class="first"><a href="#">S'inscrire</a></li>
-                <li class="last"><a href="<?= SITE_ADMIN; ?>">Se connecter</a>
-
-                </li>
+                <?php if (isset($user)) : ?>
+                    <li class="last"><a href="<?= SITE_ADMIN; ?>"><i class="fa fa-user mr-3"></i><?= $user['email'];  ?></a></li>
+                    <li class="last"><a href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i>Se déconnecter</a></li>
+                <?php else: ?>
+                    <li class="last"><a href="<?= SITE_ADMIN; ?>">Se connecter</a></li>
+                <?php endif; ?>
             </ul>
         </li>
 

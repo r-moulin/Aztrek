@@ -1,10 +1,12 @@
 <?php
-require_once '../../../security.php';
-require_once '../../../../model/database.php';
+require_once '../../security.php';
+require_once '../../../model/database.php';
 
-$libelle = $_POST['libelle'];
+$depart = $_POST['depart'];
+$prix = $_POST['prix'];
+$sejour_id = $_POST['sejour_id'];
 
-insertDifficulte($libelle);
+insertDepart($depart,$prix,$sejour_id);
 
 
-header('Location: index.php');
+header('Location: ../sejour/index.php');

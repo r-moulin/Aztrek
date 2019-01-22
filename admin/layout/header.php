@@ -1,6 +1,9 @@
 <?php
 require_once __DIR__ . '/../../config/parameters.php';
 require_once __DIR__ . '/../security.php';
+require_once __DIR__ . "/../../functions.php";
+
+$user = getCurrentUser();
 ?>
 <!doctype html>
 <html lang="fr">
