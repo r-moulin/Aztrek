@@ -9,7 +9,7 @@ $lands = getAllEntities("pays");
 
 <nav class="stellarnav">
     <ul id="nav">
-        <li class="first"><a href="#">Accueil</a></li>
+        <li class="first"><a href="<?=  SITE_URL;  ?>">Accueil</a></li>
         <li class="dir"><a href=""> Nos destinations</a>
             <ul>
                 <?php foreach ($lands as $land) : ?>
@@ -38,7 +38,8 @@ $lands = getAllEntities("pays");
                     <li class="last"><a href="<?= SITE_ADMIN; ?>"><i class="fa fa-user mr-3"></i><?= $user['email'];  ?></a></li>
                     <li class="last"><a href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i>Se déconnecter</a></li>
                 <?php else: ?>
-                    <li class="last"><a href="<?= SITE_ADMIN; ?>">Se connecter</a></li>
+                    <li class="last"><a href="<?= SITE_ADMIN; ?>"><i class="fa fa-sign-in"></i>Se connecter</a></li>
+                    <li class="last"><a href="<?= SITE_URL . "/create_account.php"; ?>"><i class="fa fa-user-plus"></i>S'inscrire </a></li>
                 <?php endif; ?>
             </ul>
         </li>

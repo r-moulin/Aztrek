@@ -1,4 +1,5 @@
-<?php require_once __DIR__ . '/../../functions.php'; ?>
+<?php require_once __DIR__ . '/../../functions.php';
+require_once  __DIR__ . "/../../config/parameters.php";?>
 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
     <div class="sidebar-sticky">
         <ul class="nav flex-column">

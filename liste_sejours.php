@@ -10,12 +10,11 @@ require_once "layout/header.php" ?>
 
 
 <main class="container">
+    <section class="travel-top">
     <?php foreach ($voyages as $voyage) : ?>
-        <div class="">
             <?php include "include/sejour_inc.php" ?>
-        </div>
     <?php endforeach;  ?>
-
+    </section>
 
 </main>
 

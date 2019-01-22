@@ -20,6 +20,11 @@
             <textarea id="description" name="description" class="form-control" placeholder="Description" required>
         </textarea>
         </div>
+        <div class="form-group">
+            <label>Description courte</label>
+            <textarea id="description_courte" name="description_courte" class="form-control" placeholder="description_courte" required>
+        </textarea>
+        </div>
         <button type="submit" class="btn btn-success">
             <i class="fa fa-check"></i>
             Ajouter

@@ -9,7 +9,7 @@ require_once '../../layout/header.php';
 
     <h1>Modification d'un Pays</h1>
 
-    <form action="update_query.php" method="POST">
+    <form action="update_query.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <label>Nom</label>
             <input type="text" name="nom" value="<?php echo $pays["nom"]; ?>" class="form-control" placeholder="Nom"

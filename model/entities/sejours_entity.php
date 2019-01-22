@@ -88,12 +88,9 @@ function getOneSejour(int $id, bool $onlyPublished = true): array
             INNER JOIN guide on sejour.guide_id = guide.id
             INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
             INNER JOIN depart on sejour.id = depart.sejour_id
-            ";
-            if ($onlyPublished) {
-                $query .= "WHERE sejour.publie = 1";
-            }
+          
+        WHERE sejour.publie = 1
 
-            $query .= "
             AND sejour.id = :id
             GROUP BY sejour.id
             ";
@@ -149,7 +146,7 @@ function updateSejour(int $id, string $nom, string $description,string $filename
     $stmt->execute();
 }
 
-function getAllDepartBySejour(string $id,int $limit=999): array
+function getAllDepartBySejour(string $id): array
 {
     global $connection;
 
@@ -163,8 +160,7 @@ function getAllDepartBySejour(string $id,int $limit=999): array
             FROM depart
             INNER JOIN   sejour on depart.sejour_id = sejour.id
             
-            WHERE depart.id= :id
-            LIMIT $limit
+            WHERE sejour.id= :id
             
             ";
 

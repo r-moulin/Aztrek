@@ -3,9 +3,9 @@
 require_once '../../../model/database.php';
 
 $id = $_GET["id"];
-$departs = getAllDepartBySejour($id, 999);
+$departs = getAllDepartBySejour($id);
 $sejour = getOneSejour($id, false);
-
+//print_r($departs);die;
 
 
 
