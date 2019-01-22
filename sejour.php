@@ -4,17 +4,19 @@ require_once "functions.php";
 $id = $_GET["id"];
 
 $sejour = getOneSejour($id, false);
-$departs = getAllEntities("depart");
+$departs = getAllDepartBySejour($id);
+
+
 
 
 getHeader("AZTREK | Accueil", "") ?>
 
-<main>
-    <section class="row col_center">
-        <H2 class="title_section"><?= $sejour{'nom'}; ?></H2>
+<main class="container">
+    <section class="flex-row col_center">
+        <h2 class="title_section mb-5"><?= $sejour{'nom'}; ?></h2>
         <article class="presentation-travel col-10 col_center flex">
-            <img class=" image-sejour" src="uploads/<?= $sejour['image']; ?>" alt="">
-            <div class="info-travel row ">
+            <img class=" image-sejour col-5" src="uploads/<?= $sejour['image']; ?>" alt="">
+            <div class="info-travel row col-5 align-items-center">
                 <ul>
                     <li><?= $sejour{'duree'}; ?> jours</li>
                     <li>à partir de <?= $sejour{'prix'}; ?> €</li>
@@ -37,10 +39,13 @@ getHeader("AZTREK | Accueil", "") ?>
 
 
         </article>
-        <?= $sejour{"description"}; ?>
-    </section>
+        <div class="description text-center my-5">
+            <?= $sejour['description']; ?>
+        </div>
 
-    <table class="table ">
+    </section>
+</main>
+<section class="container"><table class="table table-striped">
         <thead>
         <tr>
             <th>Date de départ</th>
@@ -51,14 +56,26 @@ getHeader("AZTREK | Accueil", "") ?>
         </tr>
         </thead>
         <tbody>
-        <?php foreach ($sejour as $item) : ?>
-            <td></td>
-        <?php endforeach; ?>
+        <?php foreach ($departs as $depart) : ?>
+        <tr>
+            <th scope="row"><?= $depart['date_depart'];  ?></th>
+            <th><?= $depart['date_arrivee_format'];  ?></th>
+            <th><?= $depart['prix'];  ?></th>
+            <th><?= $depart['places'];  ?></th>
+            <th><button type="submit" class="btn btn-success">
+                    <i class="fa fa-check"></i>
+                    réserver
+                </button></th>
+
+        </tr>
+        <?php endforeach;  ?>
         </tbody>
     </table>
-    </div>
 
-</main>
+</section>
+
+
+
 
 
 </html>
