@@ -1,11 +1,13 @@
-<?php
+    <?php
 require_once '../../../model/database.php';
-
+require_once '../../../functions.php';
 $id = $_GET['id'];
-$sejour = getOneSejour($id, false);
+$sejour = getOneSejour($id);
 $liste_sejours = getAllEntities("sejour");
 $liste_pays = getAllEntities("pays");
 $liste_guide = getAllEntities("guide");
+$difficultes = getAllEntities("difficulte");
+
 
 
 require_once '../../layout/header.php';
@@ -57,26 +59,31 @@ require_once '../../layout/header.php';
                       class="form-control"><?php echo $sejour["description"]; ?></textarea>
         </div>
         <div class="form-group">
-            <label>Difficulté</label><br>
-            <input type="radio" name="difficulte" class="form-check-input" value="1" required>Facile <br>
-            <input type="radio" name="difficulte" class="form-check-input" value="2" required>Moyen <br>
-            <input type="radio" name="difficulte" class="form-check-input" value="3" required>Difficile <br>
+            <label for="difficulte">Indiquez le niveau de difficulté :</label>
+            <select name="difficulte" class="form-control">
+                <?php foreach ($difficultes as $difficulte) :; ?>
+                    <?php $selected = ($difficulte["id"] == $sejour["difficulte"]) ? "selected" : ""; ?>
+                    <option value="<?= $difficulte["id"]; ?>" <?php echo $selected; ?>>
+                        <?= $difficulte["libelle"] ;?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
         </div>
         <div class="form-group">
             <label id="duree">Durée (en jours)</label>
             <input type="text" id="duree" name="duree" value="<?= $sejour["duree"]; ?>" class="form-control">
         </div>
         <div class="form-group form-check">
-            <input type="checkbox" name="publie" class="form-check-input">
+            <?php   ?>
+
+            <input type="checkbox" name="publie" value="on" class="form-check-input" <?= ($sejour["publie"]==1)?'checked' : ''  ?>>
             <label>Publié ?</label>
         </div>
         <div class="form-group form-check">
-            <input type="checkbox" name="a_la_une" class="form-check-input">
+
+            <input type="checkbox" name="a_la_une" value="on" class="form-check-input" <?=  ($sejour['a_la_une']==1) ? 'checked' : '' ;  ?>>
             <label>A la une ?</label>
         </div>
-
-
-
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <button type="submit" class="btn btn-success">
             <i class="fa fa-check"></i>

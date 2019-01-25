@@ -2,18 +2,20 @@
 require_once "model/database.php";
 require_once "functions.php";
 $id = $_GET["id"];
-
+$user = getCurrentUser();
 $sejour = getOneSejour($id, false);
 $departs = getAllDepartBySejour($id);
-
-
+$id_sejour = $sejour["id"];
+$programmes = getAllProgBySejour("$id_sejour");
 
 
 getHeader("AZTREK | Accueil", "") ?>
 
 <main class="container">
     <section class="flex-row col_center">
-        <h2 class="title_section mb-5"><?= $sejour{'nom'}; ?></h2>
+        <div class="title-section container flex">
+            <h2 class="title_section mb-5"><?= $sejour{'nom'}; ?></h2>
+        </div>
         <article class="presentation-travel col-10 col_center flex">
             <img class=" image-sejour col-5" src="uploads/<?= $sejour['image']; ?>" alt="">
             <div class="info-travel row col-5 align-items-center">
@@ -45,7 +47,20 @@ getHeader("AZTREK | Accueil", "") ?>
 
     </section>
 </main>
-<section class="container"><table class="table table-striped">
+<section class="conteu-sejour container">
+
+    <?php foreach ($programmes as $programme) : ?>
+
+        <h4 class="mt-5">Jour <?= $programme['jour']; ?></h4>
+        <h5><?= $programme['etapes']; ?></h5>
+        <div class="desc-sejour border-bottom "><?= $programme['description']; ?></div>
+
+    <?php endforeach; ?>
+</section>
+
+
+<section class="container">
+    <table class="table table-striped">
         <thead>
         <tr>
             <th>Date de départ</th>
@@ -57,25 +72,39 @@ getHeader("AZTREK | Accueil", "") ?>
         </thead>
         <tbody>
         <?php foreach ($departs as $depart) : ?>
-        <tr>
-            <th scope="row"><?= $depart['date_depart'];  ?></th>
-            <th><?= $depart['date_arrivee_format'];  ?></th>
-            <th><?= $depart['prix'];  ?></th>
-            <th><?= $depart['places'];  ?></th>
-            <th><button type="submit" class="btn btn-success">
-                    <i class="fa fa-check"></i>
-                    réserver
-                </button></th>
+            <tr>
+                <td scope="row"><?= $depart['date_depart']; ?></td>
+                <td><?= $depart['date_arrivee_format']; ?></td>
+                <td><?= $depart['prix']; ?> €</td>
+                <td>
+                    <?php if ($depart['places'] > 4) {
 
-        </tr>
-        <?php endforeach;  ?>
+                        echo $depart['places'];
+                    } elseif ($depart['places'] > 0 & $depart['places'] <= 4) {
+
+                        echo "il n'en reste plus que " . $depart['places'];
+                    } else {
+                        echo "<span class='text-danger'> COMPLET</span>";
+                    } ?>
+                </td>
+
+                <?php if (isset($user)) : ?>
+                    <td><a href="reservation.php?id=<?= $depart['id']; ?>" class="btn btn-info">
+                            <i class="fa fa-check"></i>
+                            réserver
+                        </a>
+                    </td>
+                <?php else: ?>
+                    <td><a class="btn btn-primary" href="<?= SITE_ADMIN; ?>"><i class="fa fa-sign-in"></i>Se
+                            connecter</a>
+                    </td>
+                <?php endif; ?>
+            </tr>
+        <?php endforeach; ?>
         </tbody>
     </table>
 
 </section>
-
-
-
 
 
 </html>

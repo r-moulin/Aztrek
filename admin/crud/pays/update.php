@@ -32,6 +32,12 @@ require_once '../../layout/header.php';
             <textarea type="text" name="description" class="form-control" placeholder="Description"
                       required><?php echo $pays["description"]; ?>
         </textarea>
+        </div><div class="form-group">
+
+            <label>Description courte</label>
+            <textarea type="text" name="description_courte" class="form-control" placeholder="Description courte"
+                      required><?php echo $pays["description_courte"]; ?>
+        </textarea>
         </div>
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <button type="submit" class="btn btn-success">

@@ -11,9 +11,9 @@ function getAllSejours(int $limit = 999): array
                     difficulte.libelle AS difficulte
                 
             FROM sejour
-            INNER JOIN   pays  on sejour.pays_id = pays.id
-            INNER JOIN guide on sejour.guide_id = guide.id
-            INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
+            LEFT JOIN   pays  on sejour.pays_id = pays.id
+            LEFT JOIN guide on sejour.guide_id = guide.id
+            LEFT JOIN difficulte on sejour.difficulte_id = difficulte.id
             GROUP BY sejour.id
             LIMIT $limit
             ";
@@ -35,10 +35,12 @@ function getAllSejoursByPays(string $id): array
                     difficulte.libelle AS difficulte
                 
             FROM sejour
-            INNER JOIN   pays  on sejour.pays_id = pays.id
-            INNER JOIN guide on sejour.guide_id = guide.id
-            INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
+            LEFT JOIN   pays  on sejour.pays_id = pays.id
+            LEFT JOIN guide on sejour.guide_id = guide.id
+            LEFT JOIN difficulte on sejour.difficulte_id = difficulte.id
             WHERE sejour.pays_id = :id
+
+
             ";
 
     $stmt = $connection->prepare($query);
@@ -59,11 +61,12 @@ function getAllSejoursTop(): array {
                     difficulte.libelle AS difficulte
                 
             FROM sejour
-            INNER JOIN   pays  on sejour.pays_id = pays.id
-            INNER JOIN guide on sejour.guide_id = guide.id
-            INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
+            LEFT JOIN   pays  on sejour.pays_id = pays.id
+            LEFT JOIN guide on sejour.guide_id = guide.id
+            LEFT JOIN difficulte on sejour.difficulte_id = difficulte.id
             WHERE sejour.a_la_une = 1
             GROUP BY sejour.id
+LIMIT 3
             ";
 
     $stmt = $connection->prepare($query);
@@ -71,7 +74,7 @@ function getAllSejoursTop(): array {
 
     return $stmt->fetchAll();
 }
-function getOneSejour(int $id, bool $onlyPublished = true): array
+function getOneSejour(int $id): array
 {
     global $connection;
 
@@ -88,10 +91,7 @@ function getOneSejour(int $id, bool $onlyPublished = true): array
             INNER JOIN guide on sejour.guide_id = guide.id
             INNER JOIN difficulte on sejour.difficulte_id = difficulte.id
             INNER JOIN depart on sejour.id = depart.sejour_id
-          
-        WHERE sejour.publie = 1
-
-            AND sejour.id = :id
+            WHERE sejour.id = :id
             GROUP BY sejour.id
             ";
     $stmt = $connection->prepare($query);
@@ -146,29 +146,3 @@ function updateSejour(int $id, string $nom, string $description,string $filename
     $stmt->execute();
 }
 
-function getAllDepartBySejour(string $id): array
-{
-    global $connection;
-
-    $query = "
-            SELECT 
-                  depart.*,
-                  DATE_FORMAT(depart.depart,'%d-%m-%Y ' ) AS date_depart,
-                  DATE_FORMAT(DATE_ADD(depart.depart, INTERVAL sejour.duree DAY), '%d-%m-%Y ') AS date_arrivee_format,
-                  sejour.nom AS nom,
-                  sejour.places - SUM(depart_has_user.nbr_personne) AS places
-                
-            FROM depart
-            INNER JOIN   sejour on depart.sejour_id = sejour.id
-            LEFT JOIN depart_has_user  on depart.id = depart_has_user.depart_id
-            WHERE sejour.id= :id
-            GROUP BY sejour.id
-            
-            ";
-
-    $stmt = $connection->prepare($query);
-    $stmt->bindParam(":id", $id);
-    $stmt->execute();
-
-    return $stmt->fetchAll();
-}

@@ -26,11 +26,6 @@ require_once '../../layout/header.php';
         <i class="fa fa-plus"></i>
         Ajouter
     </a>
-    <a href="../depart/create.php" class="btn btn-primary mx-2">
-        <i class="fa fa-plus"></i>
-        Ajouter des départs
-    </a>
-
     <hr>
 
 <?php if ($error_msg) : ?>
@@ -46,7 +41,6 @@ require_once '../../layout/header.php';
             <th>Pays</th>
             <th>Nom</th>
             <th>Image</th>
-            <th>Descriptions</th>
             <th>Guide</th>
             <th>Places</th>
             <th>Durée</th>
@@ -65,7 +59,6 @@ require_once '../../layout/header.php';
                 <td><?php echo $sejour{"pays"}; ?></td>
                 <td><?php echo $sejour{"nom"}; ?></td>
                 <td><img src="../../../uploads/<?php echo $sejour['image']; ?>" class="img-thumbnail"></td>
-                <td><?php echo $sejour{"description"}; ?></td>
                 <td><?php echo $sejour{"guide"}; ?></td>
                 <td><?php echo $sejour{"places"}; ?></td>
                 <td><?php echo $sejour{"duree"}; ?> jours</td>
@@ -74,9 +67,6 @@ require_once '../../layout/header.php';
                 <td><?php echo $sejour{"a_la_une"}; ?> </td>
 
                 <td class="actions">
-                    <a href="../depart/index.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning ">
-                        <i class="fa fa-edit"></i>
-                        Gérer les départs
                     </a> <a href="update.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning mx-3">
                         <i class="fa fa-edit"></i>
                         Modifier
@@ -85,7 +75,7 @@ require_once '../../layout/header.php';
                         <input type="hidden" name="id" value="<?php echo $sejour['id']; ?>">
                         <button type="submit" class="btn btn-danger">
                             <i class="fa fa-trash"></i>
-
+                        Supprimer
                         </button>
                     </form>
                 </td>

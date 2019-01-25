@@ -9,4 +9,4 @@ $sejour_id = $_POST['sejour_id'];
 insertDepart($depart,$prix,$sejour_id);
 
 
-header('Location: ../sejour/index.php');
+header('Location: index.php');

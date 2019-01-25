@@ -60,12 +60,3 @@ function insertImage (string $image, int $sejour_id)  {
     $stmt->bindParam(":sejour", $sejour_id);
     $stmt->execute();
 }
-function insertDifficulte (string $libelle)  {
-    global $connection;
-
-    $query = " INSERT INTO difficulte(libelle) VALUES (:difficulte) ";
-
-    $stmt = $connection->prepare($query);
-    $stmt->bindParam(":difficulte", $libelle);
-    $stmt->execute();
-}

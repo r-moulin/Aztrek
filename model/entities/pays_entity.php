@@ -14,15 +14,27 @@ function insertPays(string $nom, string $description,string $description_courte,
 
 }
 
-function updatePays (int $id,string $nom,string $description, string $sous_titre, string  $image) {
+function updatePays (int $id,string $nom,string $description,string $description_courte, string $sous_titre, string  $image) {
     global $connection;
-    $query = "UPDATE pays SET nom = :nom, description = :description, sous_titre = :sous_titre, image = :image WHERE id= :id";
+    $query = "UPDATE pays SET nom = :nom, description = :description,description_courte = :description_courte, sous_titre = :sous_titre, image = :image WHERE id= :id";
 
     $stmt = $connection->prepare($query);
     $stmt->bindParam(":id", $id);
     $stmt->bindParam(":nom", $nom);
     $stmt->bindParam(":image", $image);
     $stmt->bindParam(":description", $description);
+    $stmt->bindParam(":description_courte", $description_courte);
     $stmt->bindParam(":sous_titre", $sous_titre);
     $stmt->execute();
+}
+
+function getAllPays (): array {
+    global $connection;
+    $query = "SELECT *,
+              COUNT(pays.id) AS total_pays
+              FROM pays" ;
+
+    $stmt = $connection->prepare($query);
+    $stmt->execute();
+    return $stmt->fetchAll();
 }

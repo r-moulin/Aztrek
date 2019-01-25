@@ -1,24 +1,28 @@
 <?php
 require_once "model/database.php";
+require_once "functions.php";
 
-$voyages = getAllSejoursTop();
+
+$voyages = getAllSejoursTop(3);
+$lands = getAllPays();
+
 
 require_once "layout/header.php" ?>
 
     <div class="background-principal">
         <main>
-            <section class="destination-moment container flex">
-                <div class="title-section">
+            <section class="destination-moment container">
+                <div class="title-section container flex">
 
                     <h2>Destination du moment</h2>
                     <h3>Trouvez le trek qui vous convient</h3>
                 </div>
 
-                    <section class="travel-top">
-                        <?php foreach ($voyages as $voyage) : ?>
-                                <?php include "include/sejour_inc.php" ?>
-                        <?php endforeach; ?>
-                    </section>
+                <article class="d-flex bd-highlight mt-5">
+                    <?php foreach ($voyages as $voyage) : ?>
+                        <?php include "include/sejour_inc.php" ?>
+                    <?php endforeach; ?>
+                </article>
 
 
             </section>
@@ -28,77 +32,20 @@ require_once "layout/header.php" ?>
                     <h3>Un trek, un pays</h3>
                 </div>
                 <article class="owl-carousel owl-theme">
-                    <div class="carousel-1 carousel">
-                        <img src="./img/slider-costarica.jpg" alt="">
-                        <div class="content-card">
-                            <h4>Après l'effort, le réconfort</h4>
-                            <h3>Costa Rica</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem dicta provident,
-                                distinctio
-                                deserunt consequatur pariatur amet esse ea minus delectus quaerat voluptates aperiam
-                                rem
-                                temporibus fugiat ipsam? Est, minima!</p>
-                            <a href="" class="btn-more btn-small">En savoir plus</a>
+                    <?php foreach ($lands as $key => $land) :?>
+                        <div class="carousel-<?=  $key + 1;  ?> carousel">
+                            <img src="uploads/<?=  $land['image'];  ?>" alt="">
+                            <div class="content-card">
+                                <h4 ><?=  $land['sous_titre'];  ?></h4>
+                                <h3><?=  $land['nom'];  ?></h3>
+                                <?=  $land['description_courte'];  ?>
+                                <a href=liste_sejours.php?id="<?= $land['id'] ;  ?>" class="btn-more btn-small">En savoir plus</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-2 carousel">
-                        <img src="./img/slider-Guatemala.jpg" alt="">
-                        <div class="content-card">
-                            <h4>Découvrez une civilisation</h4>
-                            <h3>Guatemala</h3>
-                            <p>Et sur l’Altiplano cinq millions d’Indiens – la moitié des Guatémaltèques –
-                                entretiennent une
-                                culture maya vivace : vous les rencontrez aux marchés de Solola ou de Chichicastenango,
-                                ou dans
-                                les villages des rives du lac Atitlan …</p>
-                            <a href="" class="btn-more btn-small">En savoir plus</a>
-                        </div>
-                    </div>
-                    <div class="carousel-3 carousel">
-                        <img src="img/slider-salvadore.jpg" alt="">
-                        <div class="content-card">
-
-                            <h4>Un vrai terrain de jeu</h4>
-                            <h3>El Salvadore</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam delectus quis illo,
-                                tempore
-                                expedita optio autem fugiat enim accusamus nesciunt aut modi esse inventore,
-                                cupiditate ullam
-                                voluptatibus animi at. Nesciunt.</p>
-                            <a href="" class="btn-more btn-small">En savoir plus</a>
-                        </div>
-                    </div>
-                    <div class="carousel-4 carousel">
-                        <img src="./img/slider-mexique.jpg" alt="">
-                        <div class="content-card">
-
-                            <h4>Un vrai terrain de jeu</h4>
-                            <h3>El Salvadore</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam delectus quis
-                                illo, tempore
-                                expedita optio autem fugiat enim accusamus nesciunt aut modi esse inventore,
-                                cupiditate ullam
-                                voluptatibus animi at. Nesciunt.</p>
-                            <a href="" class="btn-more btn-small">En savoir plus</a>
-                        </div>
-                    </div>
-                    <div class="carousel-5 carousel">
-
-                        <img src="./img/slider-honduras.jpg" alt="">
-                        <div class="content-card">
-
-                            <h4>Un vrai terrain de jeu</h4>
-                            <h3>El Salvadore</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam delectus quis
-                                illo, tempore
-                                expedita optio autem fugiat enim accusamus nesciunt aut modi esse
-                                inventore, cupiditate ullam
-                                voluptatibus animi at. Nesciunt.</p>
-                            <a href="" class="btn-more btn-small">En savoir plus</a>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </article>
             </section>
+
         </main>
         <section class="quote-social container">
             <article class="quote">
@@ -229,4 +176,5 @@ require_once "layout/header.php" ?>
             </article>
         </section>
     </div>
-<?php require_once("layout/footer.php") ?>
+<?php
+    require_once("layout/footer.php") ;?>

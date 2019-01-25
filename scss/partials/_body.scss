@@ -17,7 +17,12 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    .sejour-card {
+        background: #fff;
+        padding: 10px;
+        border: 1px solid $medium-blue;
+        border-radius: 10px;
+    }
     .travel-top {
         display: flex;
         margin-top: 40px;
@@ -26,6 +31,7 @@
 
         .sejour-top{
             display: flex;
+            flex-basis: 100%;
             flex-direction: column;
             align-self: flex-start;
             height: 100%;
@@ -58,6 +64,7 @@
     width: 40px;
     height: 40px;
 }
+
 
 // -----------------Section slider -----------
 

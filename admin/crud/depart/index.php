@@ -1,11 +1,9 @@
 <?php
-
+require_once  '../../../functions.php';
 require_once '../../../model/database.php';
 
-$id = $_GET["id"];
-$departs = getAllDepartBySejour($id);
-$sejour = getOneSejour($id, false);
-//print_r($departs);die;
+
+$lands = getAllEntities("sejour");
 
 
 
@@ -25,7 +23,7 @@ if (isset($_GET['errcode'])) {
 require_once '../../layout/header.php';
 ?>
 
-    <h1>Gestion des Départs pour <?=  $sejour["nom"];  ?>  </h1>
+    <h1>Gestion des Départs </h1>
 
     <a href="create.php" class="btn btn-primary mx-2">
         <i class="fa fa-plus"></i>
@@ -42,34 +40,37 @@ require_once '../../layout/header.php';
     </div>
 <?php endif; ?>
 
+
+
+    <?php foreach ($lands as $land) : ?>
+        <h2>Départ pour <?=  $land["nom"];  ?></h2>
+
     <table class="table table-striped table-bordered table-condensed">
         <thead class="thead-light">
         <tr>
             <th>Date de départ</th>
             <th>Date d'arrivée</th>
             <th>Prix</th>
-            <th>Nom</th>
-
-
             <th class="actions">Actions</th>
         </tr>
         </thead>
         <tbody>
+    <?php
+    $id_land = $land["id"];
+    $departs = getAllDepartBySejour($id_land);  ?>
         <?php foreach ($departs as $depart) : ?>
-
             <tr>
 
                 <td><?php echo $depart{"date_depart"}; ?></td>
                 <td><?php echo $depart{"date_arrivee_format"}; ?></td>
-                <td><?php echo $depart{"nom"}; ?></td>
                 <td><?php echo $depart{"prix"}; ?></td>
                 <td class="actions">
-                    <a href="../sejour/update.php?id=<?php echo $sejour['id']; ?>" class="btn btn-warning mx-3">
+                    <a href="update.php?id=<?php echo $depart['id']; ?>" class="btn btn-warning mx-3">
                         <i class="fa fa-edit"></i>
                         Modifier
                     </a>
-                    <form action="../sejour/delete_query.php" method="POST">
-                        <input type="hidden" name="id" value="<?php echo $sejour['id']; ?>">
+                    <form action="delete_query.php" method="POST">
+                        <input type="hidden" name="id" value="<?php echo $depart['id']; ?>">
                         <button type="submit" class="btn btn-danger">
                             <i class="fa fa-trash"></i>
                             Supprimer
@@ -82,5 +83,6 @@ require_once '../../layout/header.php';
         </tbody>
     </table>
 
+    <?php endforeach;  ?>
 
 <?php require_once '../../layout/footer.php'; ?>

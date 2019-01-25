@@ -940,440 +940,493 @@
     <table id="240" parent="2" name="guide"/>
     <table id="241" parent="2" name="image"/>
     <table id="242" parent="2" name="pays"/>
-    <table id="243" parent="2" name="sejour"/>
-    <table id="244" parent="2" name="user"/>
-    <column id="245" parent="236" name="id">
+    <table id="243" parent="2" name="programme"/>
+    <table id="244" parent="2" name="sejour"/>
+    <table id="245" parent="2" name="user"/>
+    <column id="246" parent="236" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="236" name="libelle">
+    <column id="247" parent="236" name="libelle">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="236" name="user_id">
+    <column id="248" parent="236" name="user_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="236" name="sejour_id">
+    <column id="249" parent="236" name="sejour_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="236" name="date_creation">
+    <column id="250" parent="236" name="date_creation">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="250" parent="236" name="fk_commentaire_user1_idx">
+    <index id="251" parent="236" name="fk_commentaire_user1_idx">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="251" parent="236" name="fk_commentaire_sejour1_idx">
+    <index id="252" parent="236" name="fk_commentaire_sejour1_idx">
       <ColNames>sejour_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="252" parent="236" name="PRIMARY">
+    <key id="253" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="253" parent="236" name="fk_commentaire_user1">
+    <foreign-key id="254" parent="236" name="fk_commentaire_user1">
       <ColNames>user_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="254" parent="236" name="fk_commentaire_sejour1">
+    <foreign-key id="255" parent="236" name="fk_commentaire_sejour1">
       <ColNames>sejour_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>sejour</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="255" parent="237" name="id">
+    <column id="256" parent="237" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="237" name="depart">
+    <column id="257" parent="237" name="depart">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="237" name="prix">
+    <column id="258" parent="237" name="prix">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="237" name="sejour_id">
+    <column id="259" parent="237" name="sejour_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="259" parent="237" name="fk_depart_sejour_idx">
+    <index id="260" parent="237" name="fk_depart_sejour_idx">
       <ColNames>sejour_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="260" parent="237" name="PRIMARY">
+    <key id="261" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="261" parent="237" name="fk_depart_sejour">
+    <foreign-key id="262" parent="237" name="fk_depart_sejour">
       <ColNames>sejour_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>sejour</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="262" parent="238" name="depart_id">
+    <column id="263" parent="238" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="238" name="user_id">
+    <column id="264" parent="238" name="depart_id">
       <Position>2</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="238" name="nbr_personne">
+    <column id="265" parent="238" name="user_id">
       <Position>3</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="238" name="nbr_personne">
+      <Position>4</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="265" parent="238" name="fk_depart_has_user_depart1_idx">
+    <index id="267" parent="238" name="fk_depart_has_user_depart1_idx">
       <ColNames>depart_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="266" parent="238" name="fk_depart_has_user_user1_idx">
+    <index id="268" parent="238" name="fk_depart_has_user_user1_idx">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="267" parent="238" name="PRIMARY">
+    <key id="269" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>depart_id
-user_id</ColNames>
+      <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="268" parent="238" name="fk_depart_has_user_depart1">
+    <foreign-key id="270" parent="238" name="fk_depart_has_user_depart1">
       <ColNames>depart_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>depart</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="269" parent="238" name="fk_depart_has_user_user1">
+    <foreign-key id="271" parent="238" name="fk_depart_has_user_user1">
       <ColNames>user_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="270" parent="239" name="id">
+    <column id="272" parent="239" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="239" name="libelle">
+    <column id="273" parent="239" name="libelle">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="272" parent="239" name="PRIMARY">
+    <key id="274" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="273" parent="240" name="id">
+    <column id="275" parent="240" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="240" name="nom">
+    <column id="276" parent="240" name="nom">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="240" name="biographie">
+    <column id="277" parent="240" name="biographie">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="240" name="image">
+    <column id="278" parent="240" name="image">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="277" parent="240" name="PRIMARY">
+    <key id="279" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="278" parent="241" name="id">
+    <column id="280" parent="241" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="241" name="libelle">
+    <column id="281" parent="241" name="libelle">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="241" name="sejour_id">
+    <column id="282" parent="241" name="sejour_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="281" parent="241" name="fk_image_sejour1_idx">
+    <index id="283" parent="241" name="fk_image_sejour1_idx">
       <ColNames>sejour_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="282" parent="241" name="PRIMARY">
+    <key id="284" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="283" parent="241" name="fk_image_sejour1">
+    <foreign-key id="285" parent="241" name="fk_image_sejour1">
       <ColNames>sejour_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>sejour</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="284" parent="242" name="id">
+    <column id="286" parent="242" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="242" name="nom">
+    <column id="287" parent="242" name="nom">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="242" name="description">
+    <column id="288" parent="242" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="242" name="sous_titre">
+    <column id="289" parent="242" name="sous_titre">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="242" name="image">
+    <column id="290" parent="242" name="image">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="242" name="description_courte">
+    <column id="291" parent="242" name="description_courte">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="290" parent="242" name="PRIMARY">
+    <key id="292" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="291" parent="243" name="id">
+    <column id="293" parent="243" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="243" name="nom">
+    <column id="294" parent="243" name="jour">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="243" name="description">
+    <column id="295" parent="243" name="etapes">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="296" parent="243" name="description">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="243" name="sejour_id">
+      <Position>5</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="298" parent="243" name="fk_programme_sejour1_idx">
+      <ColNames>sejour_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="299" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="300" parent="243" name="fk_programme_sejour1">
+      <ColNames>sejour_id</ColNames>
+      <RefSchemaName>aztrek</RefSchemaName>
+      <RefTableName>sejour</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="301" parent="244" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="244" name="nom">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="244" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="243" name="places">
+    <column id="304" parent="244" name="places">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="243" name="a_la_une">
+    <column id="305" parent="244" name="a_la_une">
       <Position>5</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="243" name="duree">
+    <column id="306" parent="244" name="duree">
       <Position>6</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="243" name="publie">
+    <column id="307" parent="244" name="publie">
       <Position>7</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="243" name="image">
+    <column id="308" parent="244" name="image">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="243" name="difficulte_id">
+    <column id="309" parent="244" name="difficulte_id">
       <Position>9</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="243" name="pays_id">
+    <column id="310" parent="244" name="pays_id">
       <Position>10</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="243" name="guide_id">
+    <column id="311" parent="244" name="guide_id">
       <Position>11</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="302" parent="243" name="fk_sejour_difficulte1_idx">
+    <index id="312" parent="244" name="fk_sejour_difficulte1_idx">
       <ColNames>difficulte_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="303" parent="243" name="fk_sejour_pays1_idx">
+    <index id="313" parent="244" name="fk_sejour_pays1_idx">
       <ColNames>pays_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="304" parent="243" name="fk_sejour_guide_trekk1_idx">
+    <index id="314" parent="244" name="fk_sejour_guide_trekk1_idx">
       <ColNames>guide_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="305" parent="243" name="PRIMARY">
+    <key id="315" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="306" parent="243" name="fk_sejour_difficulte1">
+    <foreign-key id="316" parent="244" name="fk_sejour_difficulte1">
       <ColNames>difficulte_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>difficulte</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="307" parent="243" name="fk_sejour_pays1">
+    <foreign-key id="317" parent="244" name="fk_sejour_pays1">
       <ColNames>pays_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>pays</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="308" parent="243" name="fk_sejour_guide_trekk1">
+    <foreign-key id="318" parent="244" name="fk_sejour_guide_trekk1">
       <ColNames>guide_id</ColNames>
       <RefSchemaName>aztrek</RefSchemaName>
       <RefTableName>guide</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="309" parent="244" name="id">
+    <column id="319" parent="245" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="244" name="nom">
+    <column id="320" parent="245" name="nom">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="244" name="prenom">
+    <column id="321" parent="245" name="prenom">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="244" name="email">
+    <column id="322" parent="245" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="244" name="adresse">
+    <column id="323" parent="245" name="adresse">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="244" name="mdp">
+    <column id="324" parent="245" name="mdp">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="244" name="avatar">
+    <column id="325" parent="245" name="avatar">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="244" name="admin">
+    <column id="326" parent="245" name="admin">
       <Position>8</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="244" name="usercol">
+    <column id="327" parent="245" name="usercol">
       <Position>9</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="318" parent="244" name="email_UNIQUE">
+    <index id="328" parent="245" name="email_UNIQUE">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="319" parent="244" name="PRIMARY">
+    <key id="329" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="320" parent="244" name="email_UNIQUE">
+    <key id="330" parent="245" name="email_UNIQUE">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>email_UNIQUE</UnderlyingIndexName>
     </key>
